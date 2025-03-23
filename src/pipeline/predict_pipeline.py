@@ -9,6 +9,7 @@ import os
 
 class predict_pip:
     def predict1(self,features):
-        model = joblib.load(r"E:\heart_disease\artifacts\best_model.pkl")
+        # model = joblib.load(r".\artifacts\best_model.pkl")
+        model = joblib.load('/app/artifacts/best_model.pkl')
         y = model.predict(features)
         return y 
